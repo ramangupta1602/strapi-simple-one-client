@@ -2,7 +2,9 @@ import React from "react";
 import "./Footer.scss";
 import { FaLocationArrow, FaMobileAlt, FaEnvelope } from "react-icons/fa";
 import Payment from "../../assets/payments.png";
+
 const Footer = () => {
+   
     return (
         <div className="footer">
             <div className="footer-content">
@@ -20,8 +22,8 @@ const Footer = () => {
                     <div className="c-item">
                         <FaLocationArrow />
                         <div className="text">
-                            Kayaloram Rd, Punnamada, Kottankulangara, Alappuzha,
-                            Kerala, 688006
+                            Shivhare Colony, Meera Nagar, Morar, Gwalior, Madhya Pradesh
+                            , (474006)
                         </div>
                     </div>
                     <div className="c-item">
@@ -30,7 +32,7 @@ const Footer = () => {
                     </div>
                     <div className="c-item">
                         <FaEnvelope />
-                        <div className="text">Email: store@jsdev.com</div>
+                        <div className="text">Email: ramangupta1602@.com</div>
                     </div>
                 </div>
                 <div className="col">
@@ -55,10 +57,10 @@ const Footer = () => {
             <div className="bottom-bar">
                 <div className="bottom-bar-content">
                     <span className="text">
-                        JSDEVSTORE 2022 CREATED BY JS DEV. PREMIUM E-COMMERCE
+                        ANAND PLAZA 2023 CREATED BY RAMAN. PREMIUM E-COMMERCE
                         SOLUTIONS.
                     </span>
-                    <img src={Payment} />
+                    <img src={Payment} alt="" />
                 </div>
             </div>
         </div>

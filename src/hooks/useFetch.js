@@ -5,6 +5,7 @@ const useFetch = (endpoint) => {
 
     useEffect(() => {
         makeApiCall();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [endpoint]);
 
     const makeApiCall = async () => {

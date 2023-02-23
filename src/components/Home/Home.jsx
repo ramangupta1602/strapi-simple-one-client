@@ -12,6 +12,7 @@ const Home = () => {
     useEffect(() => {
         getProducts();
         getCategories();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const getProducts = () => {
@@ -30,7 +31,9 @@ const Home = () => {
             <Banner />
             <div className="main-content">
                 <div className="layout">
-                    <Category categories={categories} />
+                    <Category
+                     headingCategories="Categories"
+                     categories={categories} />
                     <Products
                         headingText="Popular Products"
                         products={products}

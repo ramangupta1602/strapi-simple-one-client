@@ -45,9 +45,9 @@ const Search = ({ setSearchModal }) => {
                     {data?.data?.map((item) => (
                         <div
                             className="search-result-item"
-                            key={item.id}
+                            key={item?.id}
                             onClick={() => {
-                                navigate("/product/" + item.id);
+                                navigate("/product/" + item?.id);
                                 setSearchModal(false);
                             }}
                         >
@@ -56,9 +56,10 @@ const Search = ({ setSearchModal }) => {
                                     src={
                                         process.env
                                             .REACT_APP_STRIPE_APP_DEV_URL +
-                                        item.attributes.image.data[0].attributes
+                                        item.attributes.img.data[0].attributes
                                             .url
                                     }
+                                    alt=""
                                 />
                             </div>
                             <div className="prod-details">

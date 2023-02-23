@@ -8,9 +8,9 @@ const Products = ({ products, innerPage, headingText }) => {
             <div className={`products ${innerPage ? "innerPage" : ""}`}>
                 {products?.data?.map((item) => (
                     <Product
-                        key={item.id}
-                        id={item.id}
-                        data={item.attributes}
+                        key={item?.id}
+                        id={item?.id}
+                        data={item?.attributes}
                     />
                 ))}
             </div>
@@ -18,4 +18,4 @@ const Products = ({ products, innerPage, headingText }) => {
     );
 };
 
-export default Products;
+export default Products; 

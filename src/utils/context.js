@@ -76,7 +76,7 @@ const AppContext = ({ children }) => {
                 setShowCart,
                 handleCartProductQuantity,
                 cartSubTotal,
-            }}
+            }} 
         >
             {children}
         </Context.Provider>

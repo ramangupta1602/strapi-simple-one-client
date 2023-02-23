@@ -5,7 +5,7 @@ import BannerImg from "../../../assets/banner-img.png";
 
 const Banner = () => {
     return (
-        <div className="hero-banner">
+        <div className="hero-banner" >
             <div className="content">
                 <div className="text-content">
                     <h1>SALES</h1>
@@ -19,7 +19,7 @@ const Banner = () => {
                         <div className="banner-cta v2">Shop Now</div>
                     </div>
                 </div>
-                <img className="banner-img" src={BannerImg} />
+                <img style={{height:'75vh', width:'40%'}} className="banner-img" src={BannerImg} alt="" />
             </div>
         </div>
     );
